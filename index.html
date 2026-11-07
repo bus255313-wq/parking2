@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>เว็บไซต์ตรวจสอบที่จอดรถ</title>
+    <style>
+       body {
+        margin: 0;
+        padding: 20px;
+        font-family: sans-serif;
+        background: #eef2fb;
+        text-align: center;
+       }
+
+        .card {
+        display: inline-block;
+        width: 160px;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+       }
+
+       .free{
+        background: #c2185b;
+        color: white;
+       }
+
+       .full{
+        background: #f8d7e4;
+        color: #5a1a35;
+       }
+
+       .number {
+        font-size: 64px;
+        font-weight: bold;
+       }
+
+         .lot {
+        background: white;
+        max-width: 400px;
+        margin: 10px auto;
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+       }
+
+        .row {
+        display: flex;
+        margin: 8px 0;
+        justify-content: center;
+        gap: 8px;
+       }
+
+        .slot {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+       }
+
+       .empty{background: #4caf50;}
+       .taken{background: #e53935;}
+
+
+    </style>
+</head>
+<body>
+    <h1>🚘ระบบตรวจสอบที่จอดรถ</h1>
+    <p>โรงเรียนเตรียมอุดมศึกษาภาคใต้</p>
+
+    <div class="card free">
+        <h2>ที่จอดรถว่าง</h2>
+        <div class="number">9</div>
+        <p>/ 12 ช่อง</p>
+    </div>
+
+    <div class="card full">
+        <h2>ที่จอดเต็ม</h2>
+        <div class="number">3</div>
+        <p>/ 12 ช่อง</p>
+    </div>
+
+    <div class="lot">
+     <div class="row">
+        <div class="slot empty"></div>
+        <div class="slot taken"></div>
+        <div class="slot empty"></div>
+        <div class="slot empty"></div>
+         <div class="slot empty"></div>
+        <div class="slot taken"></div>
+        <div class="slot empty"></div>
+        <div class="slot empty"></div>
+         <div class="slot empty"></div>
+        <div class="slot taken"></div>
+        <div class="slot empty"></div>
+        <div class="slot empty"></div>
+     </div>
+    </div>
+</body>
+</html>
